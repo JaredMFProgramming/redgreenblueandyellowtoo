@@ -1,0 +1,22 @@
+<html>
+<head>
+  <title>Monochrome Rainbow!</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <a href='../rgby.html'>change color</a><br><br>
+  <a href='faq.html'>FAQ</a>
+  
+  <script>
+  var genuineColors = ['white', 'black'];
+  var num = Math.floor((Math.random() * (genuineColors.length)));
+  document.bgColor = genuineColors[num];
+  
+  if (document.bgColor == 'black') {
+	document.color = 'white';
+  } else {
+	document.color = 'black';
+  };
+  </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<html>
+<head>
+  <title>Monochrome Rainbow!</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <h1>Frequently Asked Questions</h1>
+  <h2>1. Let me guess: this is another secret website.</h2>
+  <p>It definitely is!  Here, you can generate a different color of the Monochrome Rainbow.</p>
+  <h2>2. Is there anything I can do?</h2>
+  <p>Who cares?  <a href='monochrome.html'>Monochrome Rainbow!</a></p>
+  <h2>3. How can I return to the primary colors?</h2>
+  <p>Just simply click 'change color', and, ta-da!  You are now hanging out with your old friends!</p>
+  <h2>4. So, this is like Purple.com's blue webpage, am I right?</h2>
+  <p>You guessed it!  Isn't that obvious?</p>
+  <h2>5. This is cool/weird/interesting/etc.</h2>
+  <p>Though that is not a question, I am happy to take compliments! ;)</p>
+  
+  <script>
+  var genuineColors = ['white', 'black'];
+  var num = Math.floor((Math.random() * (genuineColors.length)));
+  document.bgColor = genuineColors[num];
+  
+  if (document.bgColor == 'black') {
+	document.color = 'white';
+  } else {
+	document.color = 'black';
+  };
+  </script>
+</body>
+</html>

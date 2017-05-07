@@ -1,0 +1,54 @@
+<html>
+<head>
+  <title>Monochrome Rainbow!</title>
+  <style>
+  body {
+    font-family: Verdana, Geneva, sans-serif;
+    margin-top: 20px;
+    margin-left: 20px;
+    line-height: 150%;
+}
+
+h1 {
+    font-size: 120%;
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-size: 100%;
+}
+
+p {
+    margin-left: 20px;
+}
+
+a{
+    color:#000000;
+    text-decoration: none;
+}
+
+a:link { color:#A9A9A9; }
+a:visited { color:#A9A9A9; }
+a:hover { color:#A9A9A9; }
+a:active { color:#A9A9A9; }
+
+li{
+    list-style-type: none;
+}</style>
+</head>
+<body>
+  <a href='../rgby.html'>change color</a>
+  
+  <script>
+  var genuineColors = ['white', 'black'];
+  var num = Math.floor((Math.random() * (genuineColors.length)));
+  document.bgColor = genuineColors[num];
+  
+  if (document.bgColor == 'black') {
+	document.color = 'white';
+  } else {
+	document.color = 'black';
+  };
+  </script>
+</body>
+</html>
